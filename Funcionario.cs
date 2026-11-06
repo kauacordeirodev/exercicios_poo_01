@@ -11,6 +11,13 @@ namespace ExerciciosPOO
         public string? Cargo { get; set; }
         public decimal Salario { get; private set; }
 
+        public Funcionario()
+        {
+            Nome = "Indefinido";
+            Cargo = "Indefinido";
+            Salario = 0;
+        }
+
         public void AlterarSalario(decimal novoSalario)
         {
             Salario = novoSalario;
